@@ -22,12 +22,14 @@ public:
             return 1;
         }
         for (int i = 0; i < n; i++)
+        {
             for (int j = 0; j < d; j++)
             {
                 file.get(tmp);
                 ar[i] += tmp;
-                text[i] = &ar[i];
             }
+            text[i] = &ar[i];
+        }
         return 0;
     }
     void print(){
